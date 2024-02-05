@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 // Theme
-#include "themes/nord.h"
+#include "themes/catppuccin.h"
 
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
@@ -37,10 +37,10 @@ static const char *urgent_icon = "";
 static const char *tagsel[][2] = {
 	{ red, black },
 	{ yellow, black },
-	{ orange, black },
+	{ peach, black },
 	{ blue, black },
 	{ green, black },
-	{ purple, black },
+	{ mauve, black },
 };
 
 static const unsigned int ulinepad	= 0;	/* horizontal padding between the underline and tag */
@@ -56,7 +56,7 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
-	{ "kitty",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "wezterm",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
@@ -87,15 +87,15 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", NULL};
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "wezterm", NULL };
 static const char *editorcmd[]  = { "st", "-e", "nvim", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", "--force-device-scale-factor=2", NULL };
 // static const char *browsercmd[]  = { "firefox", NULL };
 static const char *lockcmd[]  = { "slock", NULL };
 
-static const char *upvol[] = { "/home/jakob/git/dwm/scripts/volume/volinc.sh", NULL };
-static const char *downvol[] = { "/home/jakob/git/dwm/scripts/volume/voldec.sh", NULL};
-static const char *mutevol[] = { "/home/jakob/git/dwm/scripts/volume/volmute.sh", NULL};
+static const char *upvol[] = { "/home/karl/git/dwm/scripts/volume/volinc.sh", NULL };
+static const char *downvol[] = { "/home/karl/git/dwm/scripts/volume/voldec.sh", NULL};
+static const char *mutevol[] = { "/home/karl/git/dwm/scripts/volume/volmute.sh", NULL};
 
 static const char *light_up[] = {"light", "-A", "5", NULL};
 static const char *light_down[] = {"light", "-U", "5", NULL};
