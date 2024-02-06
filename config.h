@@ -36,11 +36,11 @@ static const char *urgent_icon = "";
 
 static const char *tagsel[][2] = {
 	{ red, black },
-	{ yellow, black },
-	{ peach, black },
-	{ blue, black },
-	{ green, black },
+	{ maroon, black },
+	{ pink, black },
 	{ mauve, black },
+	{ lavender, black },
+	{ blue, black },
 };
 
 static const unsigned int ulinepad	= 0;	/* horizontal padding between the underline and tag */
